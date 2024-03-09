@@ -12,7 +12,7 @@ echo "##########################################################################
 
 apt update && apt upgrade -y
 apt-get update && apt-get upgrade -y
-apt install sudo wget curl screen nano unzip git snap python3 nodejs npm docker.io docker-compose neofetch systemd firewalld iptables ssh-client ssh -y
+apt install sudo wget curl screen nano unzip git snap python3 nodejs npm docker.io docker-compose neofetch systemd firewalld iptables ssh-client ssh openssl libssl-dev-y
 
 curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc \
   | sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null && echo "deb https://ngrok-agent.s3.amazonaws.com buster main" \
